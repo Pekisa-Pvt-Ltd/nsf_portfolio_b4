@@ -1,4 +1,4 @@
-.main-section-layout{
+.main-section-layout {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
@@ -6,12 +6,19 @@
   width: 100%;
 }
 
-.main-section-1{
-  background-color: rebeccapurple;
+.main-section-1 {
+  background-color: #021526;
   width: 30%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  height: calc(100vh - 1rem);
 }
 
-.main-section-2{
+.main-section-2 {
   background-color: lightcoral;
   width: 70%;
 }
