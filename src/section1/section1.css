@@ -25,6 +25,7 @@
     height: 100%;
     padding: 1rem;
     border-radius: 100%;
+    mix-blend-mode: lighten;
 }
 
 
