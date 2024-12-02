@@ -43,19 +43,19 @@ const Section1 = () => {
         {
             icon: <FaFacebookF />,
             link: "https://www.facebook.com/",
-           color: "#0A5EB0"
+            color: "#0A5EB0"
 
         },
         {
             icon: <FaTwitter />,
             link: "https://x.com/",
-            color: "#0A5EB0"
+            color: "#1DA1F2"
 
         },
         {
             icon: <FaGithub />,
             link: "https://www.github.com",
-            color: "#0A5EB0"
+            color: "#24292E"
 
         }
     ]
@@ -99,7 +99,7 @@ const Section1 = () => {
                 {socialMedia.map((item, index) => {
                     return (
                         <a href={item.link} target='_blank' key={index}>
-                            <span className='icons'>{item.icon}</span>
+                            <h1 style={{color: item.color}} className='icons'>{item.icon}</h1>
                         </a>
                     )
                 })}

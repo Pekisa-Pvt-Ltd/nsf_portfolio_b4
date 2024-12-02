@@ -1,10 +1,9 @@
-import React from 'react'
-import './Header.css'
+import React from 'react';
+import { NavLink } from 'react-router-dom'; // Import NavLink
+import './Header.css';
 
 const Header = () => {
-
     const headerItems = [
-
         {
             id: 2,
             title: 'About',
@@ -19,22 +18,27 @@ const Header = () => {
             id: 4,
             title: 'Contact',
             link: '/contact',
-        }
+        },
+    ];
 
-    ]
     return (
         <div className='header'>
             <ul className='header-list'>
-                {headerItems.map((items) => {
-                    return (
-                        <li key={items.id - 1} className='header-list-items'>
-                            {items.title}
-                        </li>
-                    )
-                })}
+                {headerItems.map((item) => (
+                    <li key={item.id} className='header-list-items'>
+                        <NavLink
+                            to={item.link}
+                            className={({ isActive }) =>
+                                isActive ? 'header-link active' : 'header-link'
+                            }
+                        >
+                            {item.title}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
         </div>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
