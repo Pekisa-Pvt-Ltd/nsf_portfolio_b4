@@ -1,6 +1,8 @@
 .about-section {
     color: whitesmoke;
     position: relative;
+    padding: 0 1rem;
+    
 }
 
 .about-section-paragraph {
@@ -23,11 +25,33 @@
 }
 
 
-.about-heading{
-    padding: 0  0 1rem 0;
+.about-heading {
+    padding: 0 0 1rem 0;
 }
 
 
-.card-container{
+.card-parent {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: rgb(50, 50, 50);
+
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+
+.what-Iam-doing{
+    margin-top:1rem ;
 }

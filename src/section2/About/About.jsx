@@ -17,12 +17,12 @@ const About = () => {
         },
         {
             icon: <FaWebflow />,
-            title: 'Development',
+            title: 'Graphic Design',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, tempore.'
         },
         {
             icon: <FaWebflow />,
-            title: 'Development',
+            title: 'SEO',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, tempore.'
         },
 
@@ -47,17 +47,24 @@ const About = () => {
             <div className='what-Iam-doing'>
                 <h1>What I'm Doing</h1>
 
+                <div className='card-parent'>
+
+                    {cardSection.map((cards, index) => {
+                        return (
+                            <div className='card-container' key={index}>
+                                <span>{cards.icon}</span>
 
 
-                <div className='card-container'>
-                    <span><FaFaceAngry /></span>
-
-
-                    <div>
-                        <h2>Web Design</h2>
-                        <p>alsljdasd asdasd asdas d asd asd asd asd asd asd as das das d sa</p>
-                    </div>
+                                <div>
+                                    <h2>{cards.title}</h2>
+                                    <p>{cards.description}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
+
+
             </div>
 
 
