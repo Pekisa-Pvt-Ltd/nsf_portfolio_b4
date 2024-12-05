@@ -20,7 +20,7 @@ const Resume = () => {
             {
                 degree: "Ph.D. in Computer Science",
                 institution: "Stanford University",
-                year: "2022 - Present"
+                year: "2022 - Presentt"
             }
 
         ],
@@ -47,7 +47,7 @@ const Resume = () => {
         ]
     }
 
-        console.log(Object.values(ResumeData).map((item) => (item.Education)), "asdasdasd")
+    console.log(Object.values(ResumeData).map((item) => (item.Education)), "asdasdasd")
 
 
     return (
